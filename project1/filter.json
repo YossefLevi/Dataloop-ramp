@@ -1,0 +1,12 @@
+ {
+        "$and":[{
+            "hidden":false
+        },
+            {
+                "$or":[{
+                    "metadata": {
+                        "user.foo":"bar"
+                    }}]},
+            {
+                "type":"file"
+            }]}
