@@ -20,14 +20,14 @@ except:
     print('created task2_dataset2')
 
 filters = dl.Filters()
-filters.add(field='name', values='NewYear.mp4')
+filters.add(field='name', values='NewYear.webm')
 list = dataset.items.list(filters=filters)
 # Count the items
 imageCount = list.items_count
 print('Number of items in dataset: {}'.format(imageCount))
 
 if imageCount == 0 :
-    dataset.items.upload(local_path="C:/Users/forro/Downloads/NewYear.mp4")
+    dataset.items.upload(local_path="C:/Users/forro/Downloads/NewYear.webm")
 
 list = dataset.items.list(filters=filters)
 
