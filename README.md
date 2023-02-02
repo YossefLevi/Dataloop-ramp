@@ -78,8 +78,8 @@ both tasks are owned by the annotator account
 send the model correct and human corrected data into dataset 3, 
 
 * Run the pipline
-run the pipeline\n
-Upload a new 50 images batch into the pipeline folder using the model integration code as before\n
+run the pipeline
+Upload a new 50 images batch into the pipeline folder using the model integration code as before
 login as annotator, complete task1 
 login as annotator complete task 2
 as admin again, make sure final result are in dataset 3
