@@ -1,35 +1,35 @@
 Project 1
 =========
-# Getting started (UI) 
-## Login to platform, create a dataset, upload an image containing cat, add label containing cat and then: 
-### Classify the entire image as cat 
-### Clone the image and use bounding box to classify the cat 
-### Clone the image and use polygon to segment the cat 
+## Getting started (UI) 
+### Login to platform, create a dataset, upload an image containing cat, add label containing cat and then: 
+#### Classify the entire image as cat 
+#### Clone the image and use bounding box to classify the cat 
+#### Clone the image and use polygon to segment the cat 
 
-# SDK 
-## Install our python sdk 
-## login using the cli 
-## create script that: 
-### create project and dataset (dataset2) 
-### upload the cat image to the dataset (image1) 
-### add metadata field called "foo" with the value "bar" 
-### classify the image with adding annotation of cat
-### upload second cat image (image2) to the dataset with metadata field called "foo" with the value "bar2" 
+## SDK 
+### Install our python sdk 
+### login using the cli 
+### create script that: 
+#### create project and dataset (dataset2) 
+#### upload the cat image to the dataset (image1) 
+#### add metadata field called "foo" with the value "bar" 
+#### classify the image with adding annotation of cat
+#### upload second cat image (image2) to the dataset with metadata field called "foo" with the value "bar2" 
 
-# Search (UI) 
-## using the UI search for all items with metadata key foo == bar2 
-## make sure you see only one image (image2)
+## Search (UI) 
+### using the UI search for all items with metadata key foo == bar2 
+### make sure you see only one image (image2)
 
-# SDK search (UI and SDK) 
-## Take the DQL filter of the previous step from UI 
-## Using the filter json query the dataset and make sure a single image is returned (image2) . 
-## add classification of cat to this image 
-## search all images containing labels of cat, you should see two now
+## SDK search (UI and SDK) 
+#### Take the DQL filter of the previous step from UI 
+#### Using the filter json query the dataset and make sure a single image is returned (image2) . 
+#### add classification of cat to this image 
+#### search all images containing labels of cat, you should see two now
 
-# Clone (UI) 
-## Clone image1 without annotations but with metadata into new dataset (dataset3) 
-## clone image 2 with annotations bt without metadata into the same dataset (dataset3) 
-## using the SDK search on dataset3 items with label cat or metadata key foo=bar, raise python exception is count is not 2
+## Clone (UI) 
+#### Clone image1 without annotations but with metadata into new dataset (dataset3) 
+#### clone image 2 with annotations bt without metadata into the same dataset (dataset3) 
+#### using the SDK search on dataset3 items with label cat or metadata key foo=bar, raise python exception is count is not 2
 
 project 3
 =========
