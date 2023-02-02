@@ -30,3 +30,37 @@ Run the hello function in step 1 for 1M iterations, use higher concurrency and i
 
 * Concurrency(Different machines) 
 Run the hello function in step 1 for 10M iterations, in parallel batches of 100K, allow 4 machines.
+
+* Basic workflow 
+1. create another account, add it to your existing project as annotator. 
+2. create a dataset dataset1, upload 2 images containing cats and dogs. 
+3. create a recipe for labeling the cats in bounding boxes and dogs with polygons 
+4. create a task for the images with the recipe, assign the annotator user. 
+5. login as the annotator, complete the task 
+6. login as admin, watch your analytics 
+
+Project 6
+=========
+* Basic model integration
+Get 50 images of cats and dogs (Batch 1),  upload them to dataset 2
+create a recipe with labels , this time only bouding boxes for both 
+Setup a yolo model, check it detects cats / dogs on a single image locally 
+Run the models on all items in dataset 2, label them automatically using the SDK 
+
+* Pipeline
+Build the following pipelines: 
+user uploads images to folder 
+pipeline runs the model, uploading the annotations 
+create a classification task : correct / incorrect labels 
+create a correction task, all incorrect images should go to this task 
+both tasks are owned by the annotator account 
+send the model correct and human corrected data into dataset 3, 
+
+* Run the pipline
+run the pipeline
+Upload a new 50 images batch into the pipeline folder using the model integration code as before
+login as annotator, complete task1 
+login as annotator complete task 2
+as admin again, make sure final result are in dataset 3
+watch the analytics of your work 
+watch the pipeline performance of your work
